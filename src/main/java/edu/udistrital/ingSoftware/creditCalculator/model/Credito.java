@@ -5,19 +5,12 @@ import java.util.List;
 
 public class Credito {
 
-    public final static boolean VARIABLE = false;
-    public final static boolean FIJO = true;
+    //public final static boolean VARIABLE = false;
+    //public final static boolean FIJO = true;
 
-    private BigInteger monto;
+    private int monto;
     private int plazo;
     private double interes;
-    private BigInteger cuota;
+    private int cuota;
 
-    public void CalcularFijo(){
-
-    }
-
-    public void CalcularVariable(){
-
-    }
 }
