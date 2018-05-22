@@ -11,11 +11,24 @@ con header:
 Content-Type : application/json
 ~~~
 y contenido en el body
+
+Para calcular por cuotas
 ~~~json
 {
 	"credito" : {
 		"monto" : 200000,
 		"plazo" : 10,
+		"tasaInteres" : 5.0 
+	}
+}
+~~~
+
+Para calcular por monto
+~~~json
+{
+	"credito" : {
+		"monto" : 200000,
+		"cuota" : 10,
 		"tasaInteres" : 5.0 
 	}
 }
@@ -64,6 +77,8 @@ con header:
 Content-Type : application/json
 ~~~
 y contenido en el body
+
+Para calcular por cuotas
 ~~~json
 {
 	"credito" : {
@@ -74,6 +89,16 @@ y contenido en el body
 }
 ~~~
 
+Para calcular por monto
+~~~json
+{
+	"credito" : {
+		"monto" : 200000,
+		"cuota" : 10,
+		"tasaInteres" : 5.0 
+	}
+}
+~~~
 La respuesta es:
 ~~~json
 {
