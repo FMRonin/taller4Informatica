@@ -27,7 +27,7 @@ La respuesta es:
 	"cuotas" : [
 			{
 				"saldo" : 99000,
-				"bonoCapital" : 999,
+				"abonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
 				"cuotas" : 99
@@ -35,7 +35,7 @@ La respuesta es:
 			
 			{
 				"saldo" : 99000,
-				"bonoCapital" : 999,
+				"abonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
 				"cuotas" : 99
@@ -43,7 +43,7 @@ La respuesta es:
 			
 			{
 				"saldo" : 99000,
-				"bonoCapital" : 999,
+				"abonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
 				"cuotas" : 99
@@ -80,7 +80,7 @@ La respuesta es:
 	"cuotas" : [
 			{
 				"saldo" : 99000,
-				"bonoCapital" : 999,
+				"abonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
 				"cuotas" : 99
@@ -88,7 +88,7 @@ La respuesta es:
 			
 			{
 				"saldo" : 99000,
-				"bonoCapital" : 999,
+				"abonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
 				"cuotas" : 99
@@ -96,7 +96,7 @@ La respuesta es:
 			
 			{
 				"saldo" : 99000,
-				"bonoCapital" : 999,
+				"abonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
 				"cuotas" : 99
