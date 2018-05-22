@@ -30,7 +30,6 @@ La respuesta es:
 				"bonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
-				"cuota" : 1,
 				"cuotas" : 99
 			},
 			
@@ -39,7 +38,6 @@ La respuesta es:
 				"bonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
-				"cuota" : 2,
 				"cuotas" : 99
 			},
 			
@@ -48,7 +46,6 @@ La respuesta es:
 				"bonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
-				"cuota" : 3,
 				"cuotas" : 99
 			}
 		],
@@ -86,7 +83,6 @@ La respuesta es:
 				"bonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
-				"cuota" : 1,
 				"cuotas" : 99
 			},
 			
@@ -95,7 +91,6 @@ La respuesta es:
 				"bonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
-				"cuota" : 2,
 				"cuotas" : 99
 			},
 			
@@ -104,7 +99,6 @@ La respuesta es:
 				"bonoCapital" : 999,
 				"interesGenerado" : 1,
 				"amortización" : 1000,
-				"cuota" : 3,
 				"cuotas" : 99
 			}
 		],
