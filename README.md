@@ -28,7 +28,7 @@ Para calcular por monto
 {
 	"credito" : {
 		"monto" : 200000,
-		"cuota" : 10,
+		"cuota" : 10000,
 		"tasaInteres" : 5.0 
 	}
 }
@@ -94,7 +94,7 @@ Para calcular por monto
 {
 	"credito" : {
 		"monto" : 200000,
-		"cuota" : 10,
+		"cuota" : 1000,
 		"tasaInteres" : 5.0 
 	}
 }
