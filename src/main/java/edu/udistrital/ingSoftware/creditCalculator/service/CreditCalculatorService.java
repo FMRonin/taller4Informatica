@@ -14,6 +14,8 @@ public class CreditCalculatorService {
         {
             return requestCredito.getCredito().CalcularFijo();
 
+        }else{
+            return requestCredito.getCredito().CalcularVariable();
         }
     }
 }

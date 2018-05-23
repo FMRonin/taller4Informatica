@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>edu.udistrital.ingSoftware</groupId>
-	<artifactId>crediCalculator</artifactId>
+	<artifactId>creditCalculator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>crediCalculator</name>
+	<name>creditCalculator</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -33,7 +33,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -50,8 +49,7 @@
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+				<artifactId>spring-boot-maven-plugin</artifactId></plugin>
 		</plugins>
 	</build>
 

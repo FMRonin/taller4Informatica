@@ -8,31 +8,44 @@ public class Credito {
     public final static boolean VARIABLE = false;
     public final static boolean FIJO = true;
 
-    private BigInteger monto;
+    private int monto;
     private int plazo;
     private double interes;
-    private BigInteger cuota;
+    private int cuota;
     private boolean tipo;
 
     private ResponseCredito responseCredito;
 
     public ResponseCredito CalcularFijo(){
-
+        //TODO: Calcular credito variable
         return responseCredito;
     }
 
     public ResponseCredito CalcularVariable(){
 
+        responseCredito = new ResponseCredito();
+
+        if(plazo == 0)
+        {
+            int saldo = monto;
+
+            while (saldo > 0){
+                responseCredito.AddCuota(saldo-cuota,cuota,(int)(saldo*interes),(int)(cuota+saldo*interes),1);
+            }
+
+        }else if (cuota == 0){
+
+        }
         return responseCredito;
     }
 
     public
-    BigInteger getMonto() {
+    int getMonto() {
         return monto;
     }
 
     public
-    void setMonto(BigInteger monto) {
+    void setMonto(int monto) {
         this.monto = monto;
     }
 
@@ -57,12 +70,12 @@ public class Credito {
     }
 
     public
-    BigInteger getCuota() {
+    int getCuota() {
         return cuota;
     }
 
     public
-    void setCuota(BigInteger cuota) {
+    void setCuota(int cuota) {
         this.cuota = cuota;
     }
 
