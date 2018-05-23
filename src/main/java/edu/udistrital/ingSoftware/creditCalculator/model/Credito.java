@@ -29,11 +29,11 @@ public class Credito {
         {
             double saldo = monto;
             int numCuota = 1;
+            double tasaInteresMes = (1+Math.pow(tasaInteres/100.0,1.0/((int)(monto/cuota))))-1;
+            tasaInteresMes = Math.round(tasaInteresMes*100)/100.0;
 
             while (saldo > 0){
-
-                double interes = (saldo*tasaInteres)/1200.0;
-
+                double interes = Math.round(saldo*tasaInteresMes*100)/100.0;
                 responseCredito.AddCuota(saldo-cuota,cuota,interes,cuota+interes,numCuota);
                 numCuota++;
                 saldo = saldo - cuota;

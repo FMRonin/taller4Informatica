@@ -67,3 +67,6 @@ La respuesta es:
 	"totalCuotas" : 100
 }
 ~~~
+
+
+[http://www.famaf.unc.edu.ar/~kisbye/MF/2010/Sistemas_Amortizacion.pdf]()
