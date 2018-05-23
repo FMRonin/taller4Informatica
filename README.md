@@ -4,7 +4,7 @@
 
 Para el calculo del credito variable se debe consumir una operación POST a la url
 ~~~
-localhost:8080/creditCalculator/variable
+[ip]:[port]/creditCalculator
 ~~~
 con header:
 ~~~
@@ -18,7 +18,8 @@ Para calcular por cuotas
 	"credito" : {
 		"monto" : 200000,
 		"plazo" : 10,
-		"tasaInteres" : 5.0 
+		"tasaInteres" : 5.0,
+		"tipo" : false //variable 
 	}
 }
 ~~~
@@ -29,7 +30,8 @@ Para calcular por monto
 	"credito" : {
 		"monto" : 200000,
 		"cuota" : 10000,
-		"tasaInteres" : 5.0 
+		"tasaInteres" : 5.0,
+		"tipo" : true //fijo
 	}
 }
 ~~~
@@ -41,90 +43,25 @@ La respuesta es:
 			{
 				"saldo" : 99000,
 				"abonoCapital" : 999,
-				"interesGenerado" : 1,
+				"interesGenerado" : 100,
 				"amortización" : 1000,
-				"cuotas" : 99
+				"cuota" : 1
 			},
 			
 			{
 				"saldo" : 99000,
 				"abonoCapital" : 999,
-				"interesGenerado" : 1,
+				"interesGenerado" : 100,
 				"amortización" : 1000,
-				"cuotas" : 99
+				"cuota" : 2
 			},
 			
 			{
 				"saldo" : 99000,
 				"abonoCapital" : 999,
-				"interesGenerado" : 1,
+				"interesGenerado" : 100,
 				"amortización" : 1000,
-				"cuotas" : 99
-			}
-		],
-	"totalCuotas" : 100
-}
-~~~
-
-## Calculo de credito fijo
-
-Para el calculo del credito variable se debe consumir una operación POST a la url
-~~~
-localhost:8080/creditCalculator/fijo
-~~~
-con header:
-~~~
-Content-Type : application/json
-~~~
-y contenido en el body
-
-Para calcular por cuotas
-~~~json
-{
-	"credito" : {
-		"monto" : 200000,
-		"plazo" : 10,
-		"tasaInteres" : 5.0 
-	}
-}
-~~~
-
-Para calcular por monto
-~~~json
-{
-	"credito" : {
-		"monto" : 200000,
-		"cuota" : 1000,
-		"tasaInteres" : 5.0 
-	}
-}
-~~~
-La respuesta es:
-~~~json
-{
-	"cuotas" : [
-			{
-				"saldo" : 99000,
-				"abonoCapital" : 999,
-				"interesGenerado" : 1,
-				"amortización" : 1000,
-				"cuotas" : 99
-			},
-			
-			{
-				"saldo" : 99000,
-				"abonoCapital" : 999,
-				"interesGenerado" : 1,
-				"amortización" : 1000,
-				"cuotas" : 99
-			},
-			
-			{
-				"saldo" : 99000,
-				"abonoCapital" : 999,
-				"interesGenerado" : 1,
-				"amortización" : 1000,
-				"cuotas" : 99
+				"cuota" : 2
 			}
 		],
 	"totalCuotas" : 100

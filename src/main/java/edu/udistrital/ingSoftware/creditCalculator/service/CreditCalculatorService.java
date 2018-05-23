@@ -9,9 +9,11 @@ import org.springframework.stereotype.Component;
 public class CreditCalculatorService {
 
 
-    public ResponseCredito retornarCreditoVariable(RequestCredito requestCredito) {
-    }
+    public ResponseCredito retornarCredito(RequestCredito requestCredito) {
+        if(requestCredito.getCredito().isTipo() == Credito.FIJO)
+        {
+            return requestCredito.getCredito().CalcularFijo();
 
-    public ResponseCredito retornarCreditoFijo(RequestCredito requestCredito) {
+        }
     }
 }

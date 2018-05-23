@@ -14,13 +14,9 @@ public class CreditCalculatorController {
     @Autowired
     private  CreditCalculatorService calculatorService;
 
-    @PostMapping("/creditCalculator/variable")
+    @PostMapping("/creditCalculator")
     public ResponseEntity<ResponseCredito> retriveCreditoVariable(@RequestBody RequestCredito requestCredito){
         return new ResponseEntity<ResponseCredito>(calculatorService.retornarCreditoVariable(requestCredito), HttpStatus.OK);
     }
 
-    @PostMapping("/creditCalculator/fijo")
-    public ResponseEntity<ResponseCredito> retriveCreditoFijo(@RequestBody RequestCredito requestCredito){
-        return new ResponseEntity<ResponseCredito>(calculatorService.retornarCreditoFijo(requestCredito), HttpStatus.OK);
-    }
 }

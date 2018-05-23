@@ -12,12 +12,67 @@ public class Credito {
     private int plazo;
     private double interes;
     private BigInteger cuota;
+    private boolean tipo;
 
-    public void CalcularFijo(){
+    private ResponseCredito responseCredito;
 
+    public ResponseCredito CalcularFijo(){
+
+        return responseCredito;
     }
 
-    public void CalcularVariable(){
+    public ResponseCredito CalcularVariable(){
 
+        return responseCredito;
+    }
+
+    public
+    BigInteger getMonto() {
+        return monto;
+    }
+
+    public
+    void setMonto(BigInteger monto) {
+        this.monto = monto;
+    }
+
+    public
+    int getPlazo() {
+        return plazo;
+    }
+
+    public
+    void setPlazo(int plazo) {
+        this.plazo = plazo;
+    }
+
+    public
+    double getInteres() {
+        return interes;
+    }
+
+    public
+    void setInteres(double interes) {
+        this.interes = interes;
+    }
+
+    public
+    BigInteger getCuota() {
+        return cuota;
+    }
+
+    public
+    void setCuota(BigInteger cuota) {
+        this.cuota = cuota;
+    }
+
+    public
+    boolean isTipo() {
+        return tipo;
+    }
+
+    public
+    void setTipo(boolean tipo) {
+        this.tipo = tipo;
     }
 }
