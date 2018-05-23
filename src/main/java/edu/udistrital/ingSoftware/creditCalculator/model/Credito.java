@@ -8,10 +8,10 @@ public class Credito {
     public final static boolean VARIABLE = false;
     public final static boolean FIJO = true;
 
-    private int monto;
+    private double monto;
     private int plazo;
-    private double interes;
-    private int cuota;
+    private double tasaInteres;
+    private double cuota;
     private boolean tipo;
 
     private ResponseCredito responseCredito;
@@ -27,12 +27,16 @@ public class Credito {
 
         if(plazo == 0)
         {
-            int saldo = monto;
+            double saldo = monto;
             int numCuota = 1;
 
             while (saldo > 0){
-                responseCredito.AddCuota(saldo-cuota,cuota,(int)(saldo*interes),(int)(cuota+saldo*interes),numCuota);
-                saldo -= cuota;
+
+                double interes = (saldo*tasaInteres)/1200.0;
+
+                responseCredito.AddCuota(saldo-cuota,cuota,interes,cuota+interes,numCuota);
+                numCuota++;
+                saldo = saldo - cuota;
             }
 
         }else if (cuota == 0){
@@ -41,53 +45,59 @@ public class Credito {
         return responseCredito;
     }
 
-    public
-    int getMonto() {
+    public static boolean isVARIABLE() {
+        return VARIABLE;
+    }
+
+    public static boolean isFIJO() {
+        return FIJO;
+    }
+
+    public double getMonto() {
         return monto;
     }
 
-    public
-    void setMonto(int monto) {
+    public void setMonto(double monto) {
         this.monto = monto;
     }
 
-    public
-    int getPlazo() {
+    public int getPlazo() {
         return plazo;
     }
 
-    public
-    void setPlazo(int plazo) {
+    public void setPlazo(int plazo) {
         this.plazo = plazo;
     }
 
-    public
-    double getInteres() {
-        return interes;
+    public double getTasaInteres() {
+        return tasaInteres;
     }
 
-    public
-    void setInteres(double interes) {
-        this.interes = interes;
+    public void setTasaInteres(double tasaInteres) {
+        this.tasaInteres = tasaInteres;
     }
 
-    public
-    int getCuota() {
+    public double getCuota() {
         return cuota;
     }
 
-    public
-    void setCuota(int cuota) {
+    public void setCuota(double cuota) {
         this.cuota = cuota;
     }
 
-    public
-    boolean isTipo() {
+    public boolean isTipo() {
         return tipo;
     }
 
-    public
-    void setTipo(boolean tipo) {
+    public void setTipo(boolean tipo) {
         this.tipo = tipo;
+    }
+
+    public ResponseCredito getResponseCredito() {
+        return responseCredito;
+    }
+
+    public void setResponseCredito(ResponseCredito responseCredito) {
+        this.responseCredito = responseCredito;
     }
 }

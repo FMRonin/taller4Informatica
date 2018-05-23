@@ -5,14 +5,14 @@ import java.math.BigInteger;
 public
 class Cuota {
 
-    private int saldo;
-    private int abonoCapital;
-    private int interesGenerado;
-    private int amortizacion;
+    private double saldo;
+    private double abonoCapital;
+    private double interesGenerado;
+    private double amortizacion;
     private int cuota;
 
     public
-    Cuota(int saldo, int abonoCapital, int interesGenerado, int amortizacion, int cuota) {
+    Cuota(double saldo, double abonoCapital, double interesGenerado, double amortizacion, int cuota) {
         this.saldo = saldo;
         this.abonoCapital = abonoCapital;
         this.interesGenerado = interesGenerado;
@@ -20,54 +20,43 @@ class Cuota {
         this.cuota = cuota;
     }
 
-    public
-    int getSaldo() {
+    public double getSaldo() {
         return saldo;
     }
 
-    public
-    void setSaldo(int saldo) {
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
-    public
-    int getAbonoCapital() {
+    public double getAbonoCapital() {
         return abonoCapital;
     }
 
-    public
-    void setAbonoCapital(int abonoCapital) {
+    public void setAbonoCapital(double abonoCapital) {
         this.abonoCapital = abonoCapital;
     }
 
-    public
-    int getInteresGenerado() {
+    public double getInteresGenerado() {
         return interesGenerado;
     }
 
-    public
-    void setInteresGenerado(int interesGenerado) {
+    public void setInteresGenerado(double interesGenerado) {
         this.interesGenerado = interesGenerado;
     }
 
-    public
-    int getAmortizacion() {
+    public double getAmortizacion() {
         return amortizacion;
     }
 
-    public
-    void setAmortizacion(int amortizacion) {
+    public void setAmortizacion(double amortizacion) {
         this.amortizacion = amortizacion;
     }
 
-    public
-    int getCuota() {
+    public int getCuota() {
         return cuota;
     }
 
-    public
-    void setCuota(int cuota) {
+    public void setCuota(int cuota) {
         this.cuota = cuota;
     }
-
 }

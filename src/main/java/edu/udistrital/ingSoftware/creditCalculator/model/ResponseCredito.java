@@ -9,12 +9,16 @@ public class ResponseCredito {
 
     private int totalCuotas;
 
-    public void AddCuota (int saldo,
-                          int abonoCapital,
-                          int interesGenerado,
-                          int amortizacion,
+
+
+    public void AddCuota (double saldo,
+                          double abonoCapital,
+                          double interesGenerado,
+                          double amortizacion,
                           int cuota) {
-        cuotas = new ArrayList<Cuota>();
+        if(cuotas == null){
+            cuotas = new ArrayList<Cuota>();
+        }
         cuotas.add(new Cuota(saldo,abonoCapital, interesGenerado, amortizacion,cuota));
         totalCuotas = cuotas.size();
     }
