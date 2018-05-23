@@ -28,9 +28,11 @@ public class Credito {
         if(plazo == 0)
         {
             int saldo = monto;
+            int numCuota = 1;
 
             while (saldo > 0){
-                responseCredito.AddCuota(saldo-cuota,cuota,(int)(saldo*interes),(int)(cuota+saldo*interes),1);
+                responseCredito.AddCuota(saldo-cuota,cuota,(int)(saldo*interes),(int)(cuota+saldo*interes),numCuota);
+                saldo -= cuota;
             }
 
         }else if (cuota == 0){

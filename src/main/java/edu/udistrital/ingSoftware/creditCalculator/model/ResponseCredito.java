@@ -1,11 +1,11 @@
 package edu.udistrital.ingSoftware.creditCalculator.model;
 
 import java.math.BigInteger;
-import java.util.List;
+import java.util.*;
 
 public class ResponseCredito {
 
-    private List<Cuota> cuotas;
+    private ArrayList<Cuota> cuotas;
 
     private int totalCuotas;
 
@@ -14,17 +14,18 @@ public class ResponseCredito {
                           int interesGenerado,
                           int amortizacion,
                           int cuota) {
+        cuotas = new ArrayList<Cuota>();
         cuotas.add(new Cuota(saldo,abonoCapital, interesGenerado, amortizacion,cuota));
         totalCuotas = cuotas.size();
     }
 
     public
-    List<Cuota> getCuotas() {
+    ArrayList<Cuota> getCuotas() {
         return cuotas;
     }
 
     public
-    void setCuotas(List<Cuota> cuotas) {
+    void setCuotas(ArrayList<Cuota> cuotas) {
         this.cuotas = cuotas;
     }
 
