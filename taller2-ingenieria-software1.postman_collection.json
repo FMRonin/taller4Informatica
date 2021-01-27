@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "657e31eb-817e-2547-ef50-9c8d11a711d9",
+		"name": "tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "testCreditoVariableMonto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"credito\" : {\n\t\t\"monto\" : 100000,\n\t\t\"tasaInteres\" : 25.0,\n\t\t\"cuota\" : 50000\n\t}\n}\n"
+				},
+				"url": {
+					"raw": "localhost:8080/creditCalculator",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"creditCalculator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testCreditoVariablePlazo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"credito\" : {\n\t\t\"monto\" : 100000,\n\t\t\"tasaInteres\" : 25.0,\n\t\t\"cuota\" : 50000\n\t}\n}\n"
+				},
+				"url": {
+					"raw": "localhost:8080/creditCalculator",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"creditCalculator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testCreditoFijoPlazo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"credito\" : {\n\t\t\"monto\" : 100000,\n\t\t\"tasaInteres\" : 25.0,\n\t\t\"cuota\" : 50000\n\t}\n}\n"
+				},
+				"url": {
+					"raw": "localhost:8080/creditCalculator",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"creditCalculator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testCreditoFijoMonto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"credito\" : {\n\t\t\"monto\" : 100000,\n\t\t\"tasaInteres\" : 25.0,\n\t\t\"cuota\" : 50000\n\t}\n}\n"
+				},
+				"url": {
+					"raw": "localhost:8080/creditCalculator",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"creditCalculator"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
